@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory</title>
+  </head>
+
+  <style>
+
+    #all_products
+    {
+      display:  grid;
+      grid-template-columns: repeat( 5,1fr);
+      gap: 20px;
+    }
+    #all_products>div{
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      padding: 20px 20px;
+      border-radius: 6px;
+    }
+    #navbar
+    {
+        margin-top: 50px;
+        height: 60px;
+        background-color: rgb(0, 146, 0);
+        text-align: center;
+        
+        margin: auto;
+        margin-bottom: 50px;
+      }
+      button
+      {
+        margin-top: 15px;
+      }
+      p{
+        margin-top: -10px;
+        font-weight: bold;
+        color: grey;
+      }
+      p+button
+      {
+        background-color: rgb(255, 0, 85);
+        padding: 6px 15px;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-weight:bold;
+      }
+      img
+      {
+        width: 100%;
+      }
+      #add_more_product
+      {
+        background-color: rgb(0, 146, 0);
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border: 1px solid rgb(1, 32, 1);
+        border-radius: 6px;
+
+      }
+      
+  </style>
+
+  <body>
+    <div id="navbar">
+
+<a href="index.html"><button id="add_more_product">Add More Product</button></a>
+    </div>
+    <div id="all_products">
+
+      
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/inventory.js"></script>
